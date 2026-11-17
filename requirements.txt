@@ -1,0 +1,14 @@
+aiogram>=3,<4
+aiosqlite>=0.20
+python-dotenv>=1.0
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+google-generativeai>=0.7.0
+slowapi>=0.1.9
+sqlalchemy>=2.0
+alembic>=1.13
+# Phase 22.1: TZ-данные. В коде используем stdlib zoneinfo (Python 3.9+),
+# но держим pytz как явную зависимость — с ней system tzdata гарантированно
+# доступна на минимальных docker-базах (alpine/slim).
+pytz>=2024.1
