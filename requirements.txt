@@ -12,3 +12,5 @@ alembic>=1.13
 # но держим pytz как явную зависимость — с ней system tzdata гарантированно
 # доступна на минимальных docker-базах (alpine/slim).
 pytz>=2024.1
+tzdata
+greenlet
